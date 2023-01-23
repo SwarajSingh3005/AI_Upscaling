@@ -7,10 +7,10 @@ def str2bool(v):
     return v.lower() in ('true')
 
 # Low resolution image path
-parser.add_argument("--LR_path", type = str, default = "/home/s5501445/ASE_ML_Labs/SRGAN/DIV2K/DIV2K_train_LR_bicubic/X4")
+parser.add_argument("--LR_path", type = str, default = "/home/s5501445/ASE_ML_Labs/SRGAN_v2/DIV2K/DIV2K_train_LR_bicubic/X4")
 
 # Ground truth image path
-parser.add_argument("--GT_path", type = str, default = "/home/s5501445/ASE_ML_Labs/SRGAN/DIV2K/DIV2K_train_HR")
+parser.add_argument("--GT_path", type = str, default = "/home/s5501445/ASE_ML_Labs/SRGAN_v2/DIV2K/DIV2K_train_HR")
 
 # From here we can set the number of epoch,batch size,scale etc.
 parser.add_argument("--res_num", type = int, default = 16)

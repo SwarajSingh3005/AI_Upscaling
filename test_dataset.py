@@ -9,8 +9,8 @@ from dataset import crop
 
 class TestDataset(unittest.TestCase):
     def test_imgLoad(self):
-        dataset = mydata("/home/s5501445/ASE_ML_Labs/SRGAN/DIV2K/minibatch_LR",
-                         "/home/s5501445/ASE_ML_Labs/SRGAN/DIV2K/minibatch_HR")
+        dataset = mydata("/home/s5501445/ASE_ML_Labs/SRGAN_v2/DIV2K/minibatch_LR",
+                         "/home/s5501445/ASE_ML_Labs/SRGAN_v2/DIV2K/minibatch_HR")
 
         test_image = dataset[1]
         self.assertIsInstance(test_image["LR"], np.ndarray)
@@ -43,3 +43,5 @@ class TestDataset(unittest.TestCase):
     
     def test_crop(self):
         pass
+        
+
